@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Rasgo da Fenda — V7</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="login-screen" class="screen">
+  <div class="login-card">
+    <h1>Rasgo da Fenda</h1>
+    <p>Aegis — O Despertar</p>
+    <input id="playerName" placeholder="Nome do jogador">
+    <button onclick="login()">Entrar</button>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app" class="hidden">
+
+<header>
+  <h1>Rasgo da Fenda</h1>
+  <nav>
+    <button onclick="showTab('create')">Criar</button>
+    <button onclick="showTab('characters')">Personagens</button>
+    <button onclick="showTab('dice')">Dados</button>
+  </nav>
+</header>
+
+<!-- CRIAR -->
+<section id="create" class="tab">
+  <div class="paper">
+    <h2>Criar Personagem</h2>
+
+    <input id="charName" placeholder="Nome do personagem">
+    <textarea id="charStory" placeholder="História"></textarea>
+
+    <h3>Perícias (200 pontos)</h3>
+    <div id="skillsCreate"></div>
+    <p id="pointsLeft"></p>
+
+    <button onclick="createCharacter()">Criar Personagem</button>
+  </div>
+</section>
+
+<!-- PERSONAGENS -->
+<section id="characters" class="tab hidden">
+  <div class="paper">
+    <h2>Personagens</h2>
+    <div id="characterList"></div>
+  </div>
+</section>
+
+<!-- DADOS -->
+<section id="dice" class="tab hidden">
+  <div class="paper dice-layout">
+    <div>
+      <h2>Rolagem</h2>
+      <select id="diceChar"></select>
+      <div id="diceSkills"></div>
+    </div>
+
+    <div class="dice-box">
+      <div id="diceAnim" class="hidden">🎲</div>
+      <div id="diceResult"></div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
