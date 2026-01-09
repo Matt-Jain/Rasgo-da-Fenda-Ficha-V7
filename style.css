@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #0e1014, #1a1d24);
+  color: #fff;
+}
+
+.hidden { display: none; }
+
+.screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: #1f222b;
+  padding: 30px;
+  border-radius: 14px;
+  width: 300px;
+  text-align: center;
+}
+
+.login-card input, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+header {
+  background: #14161c;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav button {
+  margin-left: 5px;
+}
+
+.paper {
+  background: #f2f2e9;
+  color: #000;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.skill input {
+  width: 60px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bar span {
+  width: 80px;
+}
+
+.bar button {
+  width: 25px;
+}
+
+.life { color: red; }
+.sanity { color: goldenrod; }
+.control { color: darkblue; }
+
+.card {
+  background: #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.dice-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dice-box {
+  font-size: 32px;
+  text-align: center;
+  min-width: 200px;
+}
